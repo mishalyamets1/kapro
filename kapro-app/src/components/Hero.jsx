@@ -14,21 +14,21 @@ const Hero = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-1 mb-8 text-left min-w-[400px]">
             <div>
               <div className="flex items-center gap-2 text-base font-normal mb-2 min-w-[200px]">
-                <img src="/list-grid.svg" alt="" className="h-5 w-5" />
+                <img src="list-grid.svg" alt="" className="h-5 w-5" />
                 Переводчик
               </div>
               <div className="flex items-center gap-2 text-base font-normal min-w-[200px]">
-                <img src="/list-grid.svg" alt="" className="h-5 w-5" />
+                <img src="list-grid.svg" alt="" className="h-5 w-5" />
                 Поиск товара
               </div>
             </div>
             <div className="self-end">
               <div className="flex items-center gap-2 text-base font-normal mb-2 min-w-[200px]">
-                <img src="/list-grid.svg" alt="" className="h-5 w-5" />
+                <img src="list-grid.svg" alt="" className="h-5 w-5" />
                 Хранение грузов
               </div>
               <div className="flex items-center gap-2 text-base font-normal min-w-[200px]">
-                <img src="/list-grid.svg" alt="" className="h-5 w-5" />
+                <img src="list-grid.svg" alt="" className="h-5 w-5" />
                 Досмотр грузов
               </div>
             </div>
@@ -50,7 +50,7 @@ const Hero = () => {
         {/* Правая часть - мужик */}
         <div className="flex-shrink-0  flex items-end justify-end">
           <img
-            src="/image 24.svg"
+            src="image 24.svg"
             alt="менеджер"
             className=" object-contain"
           />

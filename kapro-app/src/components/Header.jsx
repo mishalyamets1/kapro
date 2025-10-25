@@ -10,7 +10,7 @@ const Header = () => {
     <header className="mx-auto w-full px-4 md:px-6 py-4 md:py-6 overflow-x-hidden  flex">
       
        <div className='flex w-full  items-center min-w-0'>
-    <a href="#"><img src="/logo.svg" alt="logo" className="w-[175px] h-auto" /></a>
+    <a href="#"><img src="logo.svg" alt="logo" className="w-[175px] h-auto" /></a>
   
   {/* <div className="flex flex-1 justify-center "> */}
     <ul className="hidden md:flex items-center gap-x-16 text-gray-700 whitespace-nowrap  flex-nowrap min-w-0 ml-auto ">

@@ -5,10 +5,10 @@ const GridMini = () => {
     const [activeCard, setActiveCard] = useState(0)
      
     const cards = [
-        {img: "/icon (11).svg", title:"Авиа перевозки"},
-        {img: "/icon (12).svg", title:"Авто перевозки"},
-        {img: "/icon (13).svg", title:"Ж/Д перевозки"},
-        {img: "/icon (14).svg", title:"Морские перевозки"},
+        {img: "icon (11).svg", title:"Авиа перевозки"},
+        {img: "icon (12).svg", title:"Авто перевозки"},
+        {img: "icon (13).svg", title:"Ж/Д перевозки"},
+        {img: "icon (14).svg", title:"Морские перевозки"},
     ]
     const slideCount = Math.ceil(cards.length / 2)
   return (
@@ -51,7 +51,7 @@ const GridMini = () => {
               </SwiperSlide>
             ))}
           </Swiper>
-          <img src="/Group 48.svg" alt="" className='mx-auto'/>
+          <img src="Group 48.svg" alt="" className='mx-auto'/>
         </div>
     </div>
   )

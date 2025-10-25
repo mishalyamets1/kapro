@@ -6,16 +6,16 @@ const GridSection = () => {
     const [activeIdx, setActiveIdx] = useState(0)
 
     const advantages =[
-        {icon: '/icon.svg ', title: "Помощь в поиске товара"},
-        {icon: '/icon (1).svg', title: "Работаем с ООО и ИП (ТОРГ-12)"},
-        {icon: '/icon (2).svg', title: "Документы для возврата НДС (20%)"},
-        {icon: '/icon (3).svg', title: "Возможна оплата на карту или наличными в МСК"},
-        {icon: '/icon (4).svg', title: "Оплата по счету за товар в Китае за 10 минут"},
-        {icon: '/icon (5).svg', title: "Поддержка 24/7 онлайн"},
-        {icon: '/icon (6).svg', title: "3 офиса в Китае: Пекин, Гуанчжоу, Иу"},
-        {icon: '/icon (7).svg', title: "Гарантия лучшей цены"},
-        {icon: '/icon (8).svg', title: "Таможенный представитель (декларант)"},
-        {icon: '/icon (10).svg', title: "Экспедирование груза"},
+        {icon: 'icon.svg ', title: "Помощь в поиске товара"},
+        {icon: 'icon (1).svg', title: "Работаем с ООО и ИП (ТОРГ-12)"},
+        {icon: 'icon (2).svg', title: "Документы для возврата НДС (20%)"},
+        {icon: 'icon (3).svg', title: "Возможна оплата на карту или наличными в МСК"},
+        {icon: 'icon (4).svg', title: "Оплата по счету за товар в Китае за 10 минут"},
+        {icon: 'icon (5).svg', title: "Поддержка 24/7 онлайн"},
+        {icon: 'icon (6).svg', title: "3 офиса в Китае: Пекин, Гуанчжоу, Иу"},
+        {icon: 'icon (7).svg', title: "Гарантия лучшей цены"},
+        {icon: 'icon (8).svg', title: "Таможенный представитель (декларант)"},
+        {icon: 'icon (10).svg', title: "Экспедирование груза"},
 ]
     const slidesCount = Math.ceil(advantages.length / 2)
     const ship = (activeIdx / (slidesCount-1)) * 330 +50
@@ -60,8 +60,8 @@ const GridSection = () => {
         </Swiper>
     </div>
   <div className='mt-5 relative flex md:hidden justify-center items-start w-[410px] mx-auto'>
-        <img src="/barge 1.svg" alt="" className='absolute transition-all duration-300' style={{left: `${ship}px`, top: -20, width: 44}}/>
-        <img src="/dashed line.svg" alt="" />
+        <img src="barge 1.svg" alt="" className='absolute transition-all duration-300' style={{left: `${ship}px`, top: -20, width: 44}}/>
+        <img src="dashed line.svg" alt="" />
   </div>
 </div>
   )

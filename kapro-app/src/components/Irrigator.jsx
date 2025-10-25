@@ -15,21 +15,21 @@ const Irrigator = () => {
       <div>
         <span className='font-base text-[18px] text-start max-w-[560px] mt-7.5 text-[#335D93] whitespace-nowrap'>Стоимость доставки</span>
         <div className='flex items-center gap-x-1'>
-          <img src="/currency_yen_FILL0_wght700_GRAD0_opsz48 1.svg" alt="" className='h-6 w-6'/>
+          <img src="currency_yen_FILL0_wght700_GRAD0_opsz48 1.svg" alt="" className='h-6 w-6'/>
           <span className='text-[24px] font-semibold'>000</span>
         </div>
       </div>
       <div>
         <span className='font-base text-[18px] text-start max-w-[560px] mt-7.5 text-[#335D93] whitespace-nowrap'>Срок доставки</span>
         <div className='flex items-center gap-x-1'>
-          <img src="/avg_pace_FILL0_wght700_GRAD0_opsz48 1.svg" alt="" className='h-6 w-6'/>
+          <img src="avg_pace_FILL0_wght700_GRAD0_opsz48 1.svg" alt="" className='h-6 w-6'/>
           <span className='text-[24px] font-semibold whitespace-nowrap'>00 дня </span>
         </div>
       </div>
       <div>
         <span className='font-base text-[18px] text-start max-w-[560px] mt-7.5 text-[#335D93] whitespace-nowrap'>Геопозиция</span>
         <div className='flex items-center gap-x-1'>
-          <img src="/location_on_FILL0_wght700_GRAD0_opsz48 2.svg" alt="" className='h-6 w-6'/>
+          <img src="location_on_FILL0_wght700_GRAD0_opsz48 2.svg" alt="" className='h-6 w-6'/>
           <span className='text-[24px] font-semibold'>Москва</span>
         </div>
       </div>
@@ -38,15 +38,15 @@ const Irrigator = () => {
     </div>
 
       <div>
-        <img src="/img.svg" alt="" className=' '/> 
+        <img src="img.svg" alt="" className=' '/> 
       </div>
       
   </div>
       <div className='hidden md:block mt-10'>
-        <img src="/Frame 46.svg" alt=""/>
+        <img src="Frame 46.svg" alt=""/>
       </div>
       <div className='md:hidden mx-auto mt-6'>
-        <img src="/Group 47.svg" alt="" />
+        <img src="Group 47.svg" alt="" />
       </div></div>
   )
 }
