@@ -5,4 +5,6 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   base: '/kapro-app/',
+  root:'.',
+  build: { outDir: 'dist' }
 })

@@ -2,8 +2,12 @@
   "dependencies": {
     "swiper": "^12.0.2"
   },
+  "homepage": "https://mishalyamets1.github.io/kapro/",
   "scripts": {
   "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
+  "deploy": "gh-pages -d dist",
+  "build": "vite build",
+  "preview": "vite preview",
+  "dev": "vite"
 }
 }
