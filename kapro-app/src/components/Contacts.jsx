@@ -4,15 +4,15 @@ const Contacts = () => {
   return (
     <div className='flex flex-col-reverse md:flex-row md:mt-15' >
     <div className='bg-[#F4FAFF] px-9.5 py-11 rounded-3xl mr-11 max-w-[628px] w-full'>
-      <form action="submit" className='flex flex-col'>
+      <div  className='flex flex-col'>
       <div className='relative w-full '><input type="text" placeholder='Ваше имя' className='py-4 w-full pl-6 pr-12 bg-[#E6F1FA] rounded-[12px] mb-5'/> <img src="person_FILL1_wght400_GRAD0_opsz48 (1) 1.svg" alt="" className='w-5.5 h-5.5 absolute right-6 top-4.5'/></div>
       <div className='relative w-full '><input type="text" placeholder='Введите ваш номер телефона' className='py-4 w-full pl-6 pr-12 bg-[#E6F1FA] rounded-[12px] mb-5'/> <img src="call_FILL1_wght400_GRAD0_opsz48 1.svg" alt="" className='w-5.5 h-5.5 absolute right-6 top-4.5'/></div>
       <div className='relative w-full '><input type="text" placeholder='Ваша электронная почта' className='py-4 w-full pl-6 pr-12 bg-[#E6F1FA] rounded-[12px] mb-5'/> <img src="mail_FILL1_wght400_GRAD0_opsz48 1.svg" alt="" className='w-5.5 h-5.5 absolute right-6 top-4.5'/></div>
       <div className='relative w-full '><input type="text" placeholder='Какой товар вы ищите или хотите доставить в Россию?' className='py-4 w-full pl-6 pr-12 bg-[#E6F1FA] rounded-[12px] mb-5'/> </div>
       
-      <button className='py-4.5 px-11 md:px-35 bg-[#203253] rounded-2xl text-white hover:bg-[#72B3EA] transition-colors  duration-300 ease-in-out'>Получить 100$ скидку на доставку</button>
+      <button className='py-4.5 px-11 md:px-35 bg-[#203253] rounded-2xl text-white active:bg-[#72B3EA] hover:bg-[#72B3EA] transition-colors  duration-300 ease-in-out'>Получить 100$ скидку на доставку</button>
       <div className='text-base text-[#335D93] text-start mt-5'>Отправляя заявку вы соглашаетесь с <a className='underline' href=''>Условиями использования</a> и <a className='underline' href=''>Политикой конфиденциальности</a>, тем самым соглашаетесь на обработку персональных данных</div>
-      </form>
+      </div>
     </div>
     <div className='mt-15 md:mt-0 mb-5 md:py-16 max-w-[603px]'>
       <div className='text-[24px] md:text-[40px] font-bold text-start mb-2.5 md:mb-5'>Рассчитайте стоимость доставки, отправив заявку</div>

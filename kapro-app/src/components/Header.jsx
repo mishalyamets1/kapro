@@ -14,7 +14,7 @@ const Header = () => {
   
   {/* <div className="flex flex-1 justify-center "> */}
     <ul className="hidden md:flex items-center gap-x-16 text-gray-700 whitespace-nowrap  flex-nowrap min-w-0 ml-auto ">
-      <li className="cursor-pointer hover:text-[#72B3EA] transition-colors ">Главная</li>
+      <li className="cursor-pointer hover:text-[#72B3EA]  transition-colors ">Главная</li>
       <li className="cursor-pointer hover:text-[#72B3EA] transition-colors">Ваш менеджер</li>
       <li className="cursor-pointer hover:text-[#72B3EA] transition-colors">Вопросы и ответы</li>
       <li className="cursor-pointer hover:text-[#72B3EA] transition-colors">Контакты</li>

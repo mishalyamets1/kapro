@@ -26,7 +26,7 @@ const GridMini = () => {
           <div className='text-[24px] font-bold text-[#203253] mb-5 max-w-[127px] text-start'>{f.title}</div>
           <div className='text-[20px] text-[#335D93] font-base mb-2.5'>6-10 дней</div>
           <div className='text-[20px] text-[#203253] font-semibold mb-10 '>от $5.5 за кг</div>
-          <button className='bg-[#203253] px-19.5 py-4.5 rounded-2xl max-w-[224px] min-w-0 w-full mx-auto text-white cursor-pointer hover:bg-[#72B3EA] transition-colors duration-300 ease-in-out'>Заказать</button>
+          <button className='bg-[#203253] px-19.5 py-4.5  rounded-2xl max-w-[224px] min-w-0 w-full mx-auto text-white cursor-pointer hover:bg-[#72B3EA] transition-colors duration-300 ease-in-out'>Заказать</button>
         </div>
         </div>
         ))}
@@ -46,7 +46,7 @@ const GridMini = () => {
           <div className='text-[24px] font-bold text-[#203253] mb-5 max-w-[127px] text-start'>{f.title}</div>
           <div className='text-[20px] text-[#335D93] font-base mb-2.5'>6-10 дней</div>
           <div className='text-[20px] text-[#203253] font-semibold mb-10 '>от $5.5 за кг</div>
-          <button className='bg-[#203253] px-19.5 py-4.5 rounded-2xl max-w-[224px] min-w-0 w-full mx-auto text-white cursor-pointer hover:bg-[#72B3EA] transition-colors duration-300 ease-in-out'>Заказать</button>
+          <button className='bg-[#203253] px-19.5 py-4.5 rounded-2xl max-w-[224px] min-w-0 w-full active:bg-[#72B3EA] mx-auto text-white cursor-pointer hover:bg-[#72B3EA] transition-colors duration-300 ease-in-out'>Заказать</button>
         </div></div>
               </SwiperSlide>
             ))}

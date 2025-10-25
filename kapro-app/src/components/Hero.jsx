@@ -43,7 +43,7 @@ const Hero = () => {
             placeholder="Какой товар вы ищите или хотите доставить в Россию?"
             className="h-19 md:h-12 bg-white rounded-2xl mb-2.5 w-full px-5 max-w-[480px] md:max-w-[400px]  resize-none overflow-hidden text-[14px] md:text-[16px]"
           />
-          <button className="h-14 md:h-12 w-full max-w-[480px] md:max-w-[400px] bg-[#203253] px-10 md:py-2 rounded-2xl cursor-pointer text-white font-semibold text-[14px] md:text-[16px] hover:bg-[#72B3EA] transition-colors duration-300 ease-in-out">
+          <button className="h-14 md:h-12 w-full max-w-[480px] md:max-w-[400px] bg-[#203253] px-10 md:py-2 rounded-2xl cursor-pointer active:bg-[#72B3EA] text-white font-semibold text-[14px] md:text-[16px] hover:bg-[#72B3EA] transition-colors duration-300 ease-in-out">
             Получить 100$ скидку на доставку
           </button>
         </div>

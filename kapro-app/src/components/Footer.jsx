@@ -11,10 +11,10 @@ const Footer = () => {
       </div>
       <div className='mb-10 md:mb-0'>
         <ul className="flex flex-col md:flex-row gap-y-2.5 items-center gap-x-16 text-white whitespace-nowrap  flex-nowrap min-w-0">
-      <li className="cursor-pointer hover:text-[#72B3EA] text-[20px]  transition-colors ">Главная</li>
-      <li className="cursor-pointer hover:text-[#72B3EA] text-[20px] transition-colors">Ваш менеджер</li>
-      <li className="cursor-pointer hover:text-[#72B3EA] text-[20px] transition-colors">Вопросы и ответы</li>
-      <li className="cursor-pointer hover:text-[#72B3EA] text-[20px] transition-colors">Контакты</li>
+      <li className="cursor-pointer hover:text-[#72B3EA]  active:text-[#72B3EA] text-[20px]  transition-colors ">Главная</li>
+      <li className="cursor-pointer hover:text-[#72B3EA] active:text-[#72B3EA] text-[20px] transition-colors">Ваш менеджер</li>
+      <li className="cursor-pointer hover:text-[#72B3EA] active:text-[#72B3EA] text-[20px] transition-colors">Вопросы и ответы</li>
+      <li className="cursor-pointer hover:text-[#72B3EA] active:text-[#72B3EA] text-[20px] transition-colors">Контакты</li>
     </ul>
       </div>
       <div className='flex flex-col items-center gap-y-5'>

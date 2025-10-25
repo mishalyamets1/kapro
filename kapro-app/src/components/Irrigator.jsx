@@ -34,7 +34,7 @@ const Irrigator = () => {
         </div>
       </div>
     </div>
-    <button className='bg-[#203253] cursor-pointer text-white w-full max-w-full  md:max-w-[195px] flex justify-center py-3 md:py-4.5 px-22 md:px-15.5 rounded-2xl mt-7.5 mb-7 md:mb-0 hover:bg-[#72B3EA] transition-colors duration-500 ease-in-out'>Заказать</button>
+    <button className='bg-[#203253] active:bg-[#72B3EA] cursor-pointer text-white w-full max-w-full  md:max-w-[195px] flex justify-center py-3 md:py-4.5 px-22 md:px-15.5 rounded-2xl mt-7.5 mb-7 md:mb-0 hover:bg-[#72B3EA] transition-colors duration-200 md:duration-500 ease-in-out'>Заказать</button>
     </div>
 
       <div>

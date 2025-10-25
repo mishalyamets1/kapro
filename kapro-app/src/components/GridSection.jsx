@@ -59,7 +59,7 @@ const GridSection = () => {
         }
         </Swiper>
     </div>
-  <div className='mt-5 relative flex md:hidden justify-center items-start w-[410px] mx-auto'>
+  <div className='mt-5 relative flex md:hidden justify-center items-start w-[410px] '>
         <img src="barge 1.svg" alt="" className='absolute transition-all duration-300' style={{left: `${ship}px`, top: -20, width: 44}}/>
         <img src="dashed line.svg" alt="" />
   </div>
