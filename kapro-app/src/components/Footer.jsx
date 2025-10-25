@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <div id='root' className=''>
-    <footer className='bg-[#203253] relative left-1/2 right-1/2 w-[100dvw] -ml-[50dvw] -mr-[50dvw] mt-15 py-12'>
+    <footer className='bg-[#203253] relative left-1/2 right-1/2 w-screen -translate-x-1/2 mt-15 py-12'>
       <div className='mx-auto max-w-screen-xl flex flex-col md:flex-row items-center justify-between '>
       <div className='flex flex-col'>
         <div className='mb-10 '><img src="logo (1).svg" alt="" className='min-w-[217px] h-auto cursor-pointer'/></div>
