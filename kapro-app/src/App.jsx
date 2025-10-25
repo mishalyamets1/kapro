@@ -1,67 +1,52 @@
 import { useState } from 'react'
+import {Swiper, SwiperSlide} from 'swiper/react'
+import 'swiper/css'
 import './App.css'
 import Header from './components/Header'
+import Hero from './components/Hero'
+import GridSection from './components/GridSection'
+import OurCases from './components/OurCases'
+import Irrigator from './components/Irrigator'
+import GridMini from './components/GridMini'
+import Reviews from './components/Reviews'
+import Contacts from './components/Contacts'
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-[#f8fafc] flex flex-col">
+    <div className="min-h-screen bg-white flex flex-col w-full min-w-0">
   <Header />
-  <main className="flex flex-col items-center justify-center flex-1 min-h-[80vh] ">
-    <div className="max-w-6xl w-full mx-auto">
-      <div className="flex flex-col md:flex-row items-stretch bg-[#B1DDFF] rounded-[60px] px-12 pt-5 gap-4 min-h-[420px] min-w-0">
-        {/* Левая часть */}
-        <div className="flex-1 min-w-0 flex flex-col justify-center">
-          <div className="font-bold text-[26px] md:text-[51px] leading-tight whitespace-normal text-[#335c92] min-w-60 md:min-w-100 mb-7 text-start" >
-            Доставка грузов из Китая в Россию
-          </div>
-          <div className="text-[#335c92] mb-2 whitespace-nowrap text-start">Мы предоставляем бесплатно:</div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-1 mb-8 text-left min-w-[400px]">
-            <div>
-              <div className="flex items-center gap-2 text-base font-normal mb-2 min-w-[200px]">
-                <img src="/list-grid.svg" alt="" className="h-5 w-5" />
-                Переводчик
-              </div>
-              <div className="flex items-center gap-2 text-base font-normal min-w-[200px]">
-                <img src="/list-grid.svg" alt="" className="h-5 w-5" />
-                Поиск товара
-              </div>
-            </div>
-            <div className="self-end">
-              <div className="flex items-center gap-2 text-base font-normal mb-2 min-w-[200px]">
-                <img src="/list-grid.svg" alt="" className="h-5 w-5" />
-                Хранение грузов
-              </div>
-              <div className="flex items-center gap-2 text-base font-normal min-w-[200px]">
-                <img src="/list-grid.svg" alt="" className="h-5 w-5" />
-                Досмотр грузов
-              </div>
-            </div>
-          </div>
-          <input
-            type="text"
-            placeholder="Введите ваш номер телефона"
-            className="h-12 bg-white rounded-2xl mb-2.5 w-full max-w-[480px] px-5 py-3 min-w-[240px] md:min-w-[400px] text-[14px] md:text-lg"
-          />
-          <textarea
-            type="text"
-            placeholder="Какой товар вы ищите или хотите доставить в Россию?"
-            className="h-19 md:h-12 bg-white rounded-2xl mb-2.5 w-full  md:max-w-[480px] px-5 py-2 min-w-[240px] md:min-w-[400px] resize-none overflow-hidden text-[14px] md:text-lg"
-          />
-          <button className="h-14 md:h-12 w-full max-w-[480px] min-w-[240px] md:min-w-[400px] bg-[#203253] px-10 md:py-3 rounded-2xl cursor-pointer text-white font-semibold text-[14px] md:text-lg hover:bg-[#0e47af] transition-colors duration-300 ease-in-out">
-            Получить 100$ скидку на доставку
-          </button>
-        </div>
-        {/* Правая часть - мужик */}
-        <div className="flex-shrink-0  flex items-end justify-end">
-          <img
-            src="/image 24.svg"
-            alt="менеджер"
-            className=" object-contain"
-          />
-        </div>
+  <Hero/>
+  <GridSection/>
+  <OurCases/>
+  <Irrigator/>
+  <GridMini/>
+  <Reviews/>
+  <Contacts/>
+  <div id='root' className=''>
+    <footer className='bg-[#203253] w-[100vw] ml-[calc(50%-50vw)]  mt-15 py-12  '>
+      <div className='mx-auto max-w-screen-xl flex flex-col md:flex-row items-center justify-between '>
+      <div className='flex flex-col'>
+        <div className='mb-10 '><img src="/logo (1).svg" alt="" className='min-w-[217px] h-auto cursor-pointer'/></div>
+        <div><img src="/logo (2).svg" alt="" className='min-w-[187px] h-auto cursor-pointer mb-10 md:mb-0'/></div>
       </div>
+      <div className='mb-10 md:mb-0'>
+        <ul className="flex flex-col md:flex-row gap-y-2.5 items-center gap-x-16 text-white whitespace-nowrap  flex-nowrap min-w-0">
+      <li className="cursor-pointer hover:text-[#72B3EA] text-[20px]  transition-colors ">Главная</li>
+      <li className="cursor-pointer hover:text-[#72B3EA] text-[20px] transition-colors">Ваш менеджер</li>
+      <li className="cursor-pointer hover:text-[#72B3EA] text-[20px] transition-colors">Вопросы и ответы</li>
+      <li className="cursor-pointer hover:text-[#72B3EA] text-[20px] transition-colors">Контакты</li>
+    </ul>
+      </div>
+      <div className='flex flex-col items-center gap-y-5'>
+        <div className='flex gap-x-10'>
+          <img src="/wechat 1.svg" alt="" className='cursor-pointer'/>
+          <img src="/whatsapp 1.svg" alt="" className='cursor-pointer'/>
+        </div>
+        <div><img src="QR.svg" alt="" className=' md:min-w-35 cursor-pointer'/></div>
+      </div>
+      </div>
+    </footer>
     </div>
-  </main>
 </div>
 
 

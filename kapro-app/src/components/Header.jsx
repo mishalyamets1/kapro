@@ -7,28 +7,23 @@ const Header = () => {
     },[openMenu])
   return (
     <>
-    <header className="mx-auto max-w-screen px-4 md:px-6 py-4 md:py-6">
-      <div className="">
-        <div className='inline-flex justify-between items-center gap-100'>
-        <div className="w-[175px] flex-shrink-0 ">
-          <a href="#">
-            <img src="/logo.svg" alt="logo" className="w-full h-auto " />
-          </a>
-        </div>
-
-        
-        <div className="flex-1 flex justify-center">
-          <ul className="hidden md:flex items-center space-x-16 text-gray-700 whitespace-nowrap">
-            <li className="cursor-pointer hover:text-[#72B3EA] transition-colors ">Главная</li>
-            <li className="cursor-pointer hover:text-[#72B3EA] transition-colors">Ваш менеджер</li>
-            <li className="cursor-pointer hover:text-[#72B3EA] transition-colors">Вопросы и ответы</li>
-            <li className="cursor-pointer hover:text-[#72B3EA] transition-colors">Контакты</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    <header className="mx-auto w-full px-4 md:px-6 py-4 md:py-6 overflow-x-hidden  flex">
+      
+       <div className='flex w-full  items-center min-w-0'>
+    <a href="#"><img src="/logo.svg" alt="logo" className="w-[175px] h-auto" /></a>
+  
+  {/* <div className="flex flex-1 justify-center "> */}
+    <ul className="hidden md:flex items-center gap-x-16 text-gray-700 whitespace-nowrap  flex-nowrap min-w-0 ml-auto ">
+      <li className="cursor-pointer hover:text-[#72B3EA] transition-colors ">Главная</li>
+      <li className="cursor-pointer hover:text-[#72B3EA] transition-colors">Ваш менеджер</li>
+      <li className="cursor-pointer hover:text-[#72B3EA] transition-colors">Вопросы и ответы</li>
+      <li className="cursor-pointer hover:text-[#72B3EA] transition-colors">Контакты</li>
+    </ul>
+  </div>
+{/* </div> */}
+      
     <div 
-    className='flex sm:hidden  flex-col gap-1  w-10 h-10 rounded-full items-center justify-center cursor-pointer fixed right-6 top-7 z-20'
+    className='flex md:hidden  flex-col gap-1  w-10 h-10 rounded-full items-center justify-center cursor-pointer fixed right-6 top-7 z-20'
     onClick={()=>setOpenMenu(!openMenu)}
     > 
         <span className='w-6 h-1 bg-[#203253] rounded-3xl'></span>
