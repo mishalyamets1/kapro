@@ -58,7 +58,7 @@ const Reviews = () => {
     ))}
         </Swiper>
     </div>
-    <img src="/Group 49.svg" alt="" className='mx-auto md:hidden'/>
+    <img src="Group 49.svg" alt="" className='mx-auto md:hidden'/>
   </div>
   )
 }
