@@ -11,21 +11,23 @@ import GridMini from './components/GridMini'
 import Reviews from './components/Reviews'
 import Contacts from './components/Contacts'
 import Footer from './components/Footer'
+import MainPage from './pages/MainPage'
+import OurManager from './pages/OurManager'
+import OurContacts from './pages/OurContacts'
+import Questions from './pages/Questions'
+import { Route, Router, Routes } from 'react-router-dom'
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-white flex flex-col w-full min-w-0">
-  <Header />
-  <Hero/>
-  <GridSection/>
-  <OurCases/>
-  <Irrigator/>
-  <GridMini/>
-  <Reviews/>
-  <Contacts/>
-  <Footer/>
-</div>
-
+    
+<>
+    <Routes>
+      <Route path="/" element={<MainPage/>}/>
+      <Route path="/manager" element={<OurManager/>}/>
+      <Route path="/Q&A" element={<Questions/>}/>
+      <Route path="/Contacts" element={<OurContacts/>}/>
+    </Routes>
+</>
 
   )
 }

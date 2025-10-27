@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-
+import {Link} from 'react-router-dom'
 const Header = () => {
     const [openMenu, setOpenMenu] = useState(false)
     useEffect(()=>{
@@ -14,10 +14,10 @@ const Header = () => {
   
   {/* <div className="flex flex-1 justify-center "> */}
     <ul className="hidden md:flex items-center gap-x-16 text-gray-700 whitespace-nowrap  flex-nowrap min-w-0 ml-auto ">
-      <li className="cursor-pointer hover:text-[#72B3EA]  transition-colors ">Главная</li>
-      <li className="cursor-pointer hover:text-[#72B3EA] transition-colors">Ваш менеджер</li>
-      <li className="cursor-pointer hover:text-[#72B3EA] transition-colors">Вопросы и ответы</li>
-      <li className="cursor-pointer hover:text-[#72B3EA] transition-colors">Контакты</li>
+      <Link to="/"><li className="cursor-pointer hover:text-[#72B3EA]  transition-colors ">Главная</li></Link>
+      <Link to="/manager"><li className="cursor-pointer hover:text-[#72B3EA] transition-colors">Ваш менеджер</li></Link>
+      <Link to='/Q&A'><li className="cursor-pointer hover:text-[#72B3EA] transition-colors">Вопросы и ответы</li></Link>
+      <Link to='/Contacts'><li className="cursor-pointer hover:text-[#72B3EA] transition-colors">Контакты</li></Link>
     </ul>
   </div>
 {/* </div> */}
@@ -37,10 +37,10 @@ const Header = () => {
     ?<div className='w-screen h-screen bg-white fixed top-0 left-0 z-10 opacity-100 transition-all duration-500 ease-in-out'>
         <div className='flex justify-center items-center h-full w-full' >
             <ul className='flex flex-col gap-y-10 '>
-            <li className="cursor-pointer active:text-[#72B3EA]">Главная</li>
-            <li className="cursor-pointer active:text-[#72B3EA]">Ваш менеджер</li>
-            <li className="cursor-pointer active:text-[#72B3EA]">Вопросы и ответы</li>
-            <li className="cursor-pointer active:text-[#72B3EA]">Контакты</li>
+            <Link to="/"><li className="cursor-pointer active:text-[#72B3EA]  transition-colors ">Главная</li></Link>
+      <Link to="/manager"><li className="cursor-pointer active:text-[#72B3EA] transition-colors">Ваш менеджер</li></Link>
+      <Link to='/Q&A'><li className="cursor-pointer active:text-[#72B3EA] transition-colors">Вопросы и ответы</li></Link>
+      <Link to='/Contacts'><li className="cursor-pointer active:text-[#72B3EA] transition-colors">Контакты</li></Link>
             </ul>
         </div>
     </div>

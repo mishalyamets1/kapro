@@ -1,6 +1,9 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 const Irrigator = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false)
+  const openModal = () => setIsModalOpen(true)
+  const closeModal = () => setIsModalOpen(false)
   return (
     <div><div className='flex flex-col md:flex-row gap-x-11 items-start bg-[#F4FAFF] rounded-[24px]'>
     <div className=''>
@@ -34,7 +37,11 @@ const Irrigator = () => {
         </div>
       </div>
     </div>
-    <button className='bg-[#203253] active:bg-[#72B3EA] cursor-pointer text-white w-full max-w-full  md:max-w-[195px] flex justify-center py-3 md:py-4.5 px-22 md:px-15.5 rounded-2xl mt-7.5 mb-7 md:mb-0 hover:bg-[#72B3EA] transition-colors duration-200 md:duration-500 ease-in-out'>Заказать</button>
+    <button 
+    onClick={openModal}
+    className='bg-[#203253] active:bg-[#72B3EA] cursor-pointer text-white w-full max-w-full  md:max-w-[195px] flex justify-center py-3 md:py-4.5 px-22 md:px-15.5 rounded-2xl mt-7.5 mb-7 md:mb-0 hover:bg-[#72B3EA] transition-colors duration-200 md:duration-500 ease-in-out'>
+      Заказать
+      </button>
     </div>
 
       <div>
@@ -47,7 +54,27 @@ const Irrigator = () => {
       </div>
       <div className='md:hidden mx-auto mt-6'>
         <img src="Group 47.svg" alt="" />
-      </div></div>
+      </div>
+      {isModalOpen && (
+        <div onClick={closeModal}  className='flex justify-center items-center mx-auto h-screen w-screen bg-black/50 fixed inset-0 z-50'>
+        <div onClick={(e) => e.stopPropagation()} className='bg-[#F4FAFF] px-5 md:px-9.5 py-9.5 md:py-11 rounded-3xl mr-11 max-w-[280px] md:max-w-[628px] w-full ' >
+          <div className='flex items-center justify-between mb-5 md:mb-15'>
+            <div className='text-[24px] md:text-[48px] text-start font-bold text-[#203253]'>Заполните форму</div>
+            <button><img src="close_FILL0_wght700_GRAD0_opsz48 1.svg" onClick={closeModal} className='cursor-pointer'/></button>
+          </div>
+      <div  className='flex flex-col'>
+      <div className='relative w-full '><input type="text" placeholder='Ваше имя' className='py-4 w-full pl-6 pr-12 bg-[#E6F1FA] rounded-[12px] mb-5'/> <img src="person_FILL1_wght400_GRAD0_opsz48 (1) 1.svg" alt="" className='w-5.5 h-5.5 absolute right-6 top-4.5'/></div>
+      <div className='relative w-full '><input type="text" placeholder='Введите ваш номер телефона' className='py-4 w-full pl-6 pr-12 bg-[#E6F1FA] rounded-[12px] mb-5'/> <img src="call_FILL1_wght400_GRAD0_opsz48 1.svg" alt="" className='w-5.5 h-5.5 absolute right-6 top-4.5'/></div>
+      <div className='relative w-full '><input type="text" placeholder='Ваша электронная почта' className='py-4 w-full pl-6 pr-12 bg-[#E6F1FA] rounded-[12px] mb-5'/> <img src="mail_FILL1_wght400_GRAD0_opsz48 1.svg" alt="" className='w-5.5 h-5.5 absolute right-6 top-4.5'/></div>
+      <div className='relative w-full '><input type="text" placeholder='Какой товар вы ищите или хотите доставить в Россию?' className='py-4 w-full pl-6 pr-12 bg-[#E6F1FA] rounded-[12px] mb-5'/> </div>
+      
+      <button className='py-4.5 px-11 md:px-35 bg-[#203253] rounded-2xl text-white active:bg-[#72B3EA] hover:bg-[#72B3EA] transition-colors  duration-300 ease-in-out'>Получить 100$ скидку на доставку</button>
+      <div className='text-base text-[#335D93] text-start mt-5'>Отправляя заявку вы соглашаетесь с <a className='underline' href=''>Условиями использования</a> и <a className='underline' href=''>Политикой конфиденциальности</a>, тем самым соглашаетесь на обработку персональных данных</div>
+      </div>
+    </div>
+    </div>
+      )}
+      </div>
   )
 }
 
