@@ -57,7 +57,7 @@ const Irrigator = () => {
       </div>
       {isModalOpen && (
         <div onClick={closeModal}  className='flex justify-center items-center mx-auto h-screen w-screen bg-black/50 fixed inset-0 z-50'>
-        <div onClick={(e) => e.stopPropagation()} className='bg-[#F4FAFF] px-5 md:px-9.5 py-9.5 md:py-11 rounded-3xl mr-11 max-w-[280px] md:max-w-[628px] w-full ' >
+        <div onClick={(e) => e.stopPropagation()} className='bg-[#F4FAFF] px-5 md:px-9.5 py-9.5 md:py-11 rounded-3xl mr-11 max-w-[320px] md:max-w-[628px] w-full ' >
           <div className='flex items-center justify-between mb-5 md:mb-15'>
             <div className='text-[24px] md:text-[48px] text-start font-bold text-[#203253]'>Заполните форму</div>
             <button><img src="close_FILL0_wght700_GRAD0_opsz48 1.svg" onClick={closeModal} className='cursor-pointer'/></button>
